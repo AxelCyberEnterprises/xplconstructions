@@ -1,7 +1,7 @@
 // const top = document.getElementById("top")
 const carousels = document.querySelectorAll(".carousel");
 const btns = document.querySelectorAll(".top-btn");
-const imgs = ["constr 2.png", "bg-img.jpg", "concrete.jpg"];
+const imgs = ["constr2.png", "bg-img.jpg", "concrete.jpg"];
 const carouselDiv = document.getElementById("carousels");
 
 let index = 0;
@@ -39,7 +39,7 @@ function setActiveSlide(activeSlide) {
   carousels[activeSlide].classList.add("active");
 
   const bgStyle = `
-        url('../img/${imgs[activeSlide]}') no-repeat center center fixed 
+        url(../img/${imgs[activeSlide]}) no-repeat center center fixed 
     `;
   carouselDiv.style.background = bgStyle;
   carouselDiv.style.backgroundSize = "cover";
