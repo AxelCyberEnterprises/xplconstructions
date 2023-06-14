@@ -39,7 +39,7 @@ function setActiveSlide(activeSlide) {
   carousels[activeSlide].classList.add("active");
 
   const bgStyle = `
-        url('..img/${imgs[activeSlide]}') no-repeat center center fixed 
+        url('../img/${imgs[activeSlide]}') no-repeat center center fixed 
     `;
   carouselDiv.style.background = bgStyle;
   carouselDiv.style.backgroundSize = "cover";
